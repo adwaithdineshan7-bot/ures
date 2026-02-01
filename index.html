@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 class="logo">URES</h1>
+  <div class="cart" onclick="toggleCart()">
+    🛒 <span id="cartCount">0</span>
+  </div>
+</header>
+
+<section class="products">
+  <div class="card">
+    <img src="perfume.jpg">
+    <h3>URES Perfume</h3>
+    <p>₹999</p>
+    <button onclick="addToCart('URES Perfume', 999)">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="tshirt.jpg">
+    <h3>URES T-Shirt</h3>
+    <p>₹799</p>
+    <button onclick="addToCart('URES T-Shirt', 799)">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="boots.jpg">
+    <h3>URES Boots</h3>
+    <p>₹1999</p>
+    <button onclick="addToCart('URES Boots', 1999)">Add to Cart</button>
+  </div>
+</section>
+
+<div class="cartPanel" id="cartPanel">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <p class="total">Subtotal: ₹<span id="total">0</span></p>
+  <button class="whatsapp" onclick="orderWhatsApp()">Order on WhatsApp</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
